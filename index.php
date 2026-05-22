@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My baby</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title">Adventures of <span class="name-highlight">Sam</span> & <span class="name-highlight">Ley</span></h1>
+            <p class="tagline"> Our Love</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#gallery">Moments</a></li>
+            <li><a href="#events">Special Dates</a></li>
+            <li><a href="#contact">Connect</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2>The Beginning of Forever</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Wala nakita kolang notes nya na ML inaya kona, papansin kasi ako e. Pero bago ang lahat inadd kase nyako sa facebook 
+                        feel ko crush nyako HAHAHAHAHA
+                    </p>
+                    <p>
+                        Kalako ml ml lang ang magiging connection naming dalawa, magiging baby ko pala HAHAHAHA
+                </div>
+                <div class="couple-image">
+                    <img src="ley.jpeg" alt="Sam and Ley together">
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="section-header">
+                <h2>Cherished Memories</h2>
+            </div>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="us.jpeg" alt="Moment 1">
+                    <div class="photo-caption">First Date</div>
+                </div>
+                <div class="photo-item">
+                    <img src="ley.jpeg" alt="Moment 2">
+                    <div class="photo-caption">Date</div>
+                </div>
+                <div class="photo-item">
+                    <img src="leyo.jpeg" alt="Moment 3">
+                    <div class="photo-caption">Cozy Evening In</div>
+                </div>
+                <div class="photo-item">
+                    <img src="coley.jpeg" alt="Moment 4">
+                    <div class="photo-caption">A Laugh Shared</div>
+                </div>
+                <div class="photo-item">
+                    <img src="baby ko.jpeg" alt="Moment 5">
+                    <div class="photo-caption">Coffee Date</div>
+                </div>
+                <div class="photo-item">
+                    <img src="bb.jpeg" alt="Moment 6">
+                    <div class="photo-caption">Our Happy Place</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="events-section">
+            <div class="section-header">
+                <h2>Key Dates</h2>
+            </div>
+            <div class="event-list">
+                <div class="event-item">
+                    <h3>The Day We Met</h3>
+                    <p>November 2025</p>
+                </div>
+                <div class="event-item">
+                    <h3>Our First Date</h3>
+                    <p>February 14, 2026</p>
+                </div>
+                <div class="event-item">
+                    <h3>Meet my parents</h3>
+                    <p>March 27, 2026</p>
+                </div>
+                <div class="event-item">
+                    <h3>First overnight</h3>
+                    <p>April 2, 2026</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2>Stay Connected</h2>
+            </div>
+            <div class="contact-info">
+                <p>We'd love to hear from you! Feel free to reach out:</p>
+                <p>Email: <a href="mailto:strong.143@example.com">strong.143@example.com</a></p>
+                <p>Follow us on social media (links coming soon!)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="current-year"></span> S&A. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple script to update the current year in the footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #a0522d; /* Sienna - warm, earthy, romantic */
+    --secondary-color: #deb887; /* Burlywood - soft, golden */
+    --accent-color: #8fbc8f; /* DarkSeaGreen - gentle, natural */
+    --text-color: #333;
+    --light-text-color: #666;
+    --background-color: #fefaf6; /* Very light, creamy off-white */
+    --section-background: #ffffff; /* White for content blocks */
+    --footer-background: #e0cba8; /* A slightly deeper warm tone for footer */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Merriweather', serif;
+    --nav-font: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Padding on sides for smaller screens */
+}
+
+/* --- Header --- */
+.site-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden; /* To contain decorative elements */
+}
+
+.site-header::before { /* Decorative element */
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.site-title {
+    font-family: var(--heading-font);
+    font-size: 3.8em;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.name-highlight {
+    color: var(--secondary-color);
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.tagline {
+    font-size: 1.4em;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.5px;
+}
+
+/* --- Navigation --- */
+.main-nav {
+    background-color: var(--footer-background);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: inline-flex; /* For horizontal alignment */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    font-family: var(--nav-font);
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: var(--primary-color);
+    color: #fff;
+    outline: none;
+}
+
+/* --- Section Styling --- */
+.container section {
+    background-color: var(--section-background);
+    margin-bottom: 40px;
+    padding: 50px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-family: var(--heading-font);
+    font-size: 2.8em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-header h2::after { /* Underline for section titles */
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+/* --- About Section --- */
+.about-section .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section .about-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left; /* Align text to the left within its column */
+}
+
+.about-section p {
+    font-size: 1.15em;
+    color: var(--light-text-color);
+    margin-bottom: 20px;
+}
+
+.about-section .couple-image {
+    flex-shrink: 0;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border: 5px solid var(--secondary-color);
+    display: flex; /* Center image within the circle */
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section .couple-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circular area */
+    display: block;
+}
+
+/* --- Gallery Section --- */
+.gallery-section .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery-section .photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-section .photo-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-section .photo-item img {
+    width: 100%;
+    height: 250px; /* Fixed height for consistent grid look */
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.gallery-section .photo-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.gallery-section .photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    font-size: 0.95em;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease, background 0.3s ease;
+}
+
+.gallery-section .photo-item:hover .photo-caption {
+    opacity: 1;
+    background: rgba(160, 82, 44, 0.8); /* Use primary color for caption */
+}
+
+/* --- Events Section --- */
+.events-section .event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    text-align: center;
+}
+
+.events-section .event-item {
+    background-color: var(--background-color); /* Lighter background for individual events */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    transition: background-color 0.3s ease;
+}
+
+.events-section .event-item:hover {
+    background-color: var(--footer-background); /* Subtle hover effect */
+}
+
+.events-section h3 {
+    font-family: var(--heading-font);
+    font-size: 1.6em;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.events-section p {
+    font-size: 1.1em;
+    color: var(--light
