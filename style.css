@@ -285,4 +285,5 @@ body {
 
 .events-section p {
     font-size: 1.1em;
-    color: var(--light
+    color: var(--light)-text-color;
+}
